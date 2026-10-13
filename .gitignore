@@ -1,0 +1,10 @@
+# Keep runtime data and credentials out of version control.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+.DS_Store
+runtime/
+outputs/

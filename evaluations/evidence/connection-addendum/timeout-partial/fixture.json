@@ -1,0 +1,44 @@
+{
+  "synthetic": true,
+  "tools_are_fictitious": true,
+  "repo": "private-owner/work-memory",
+  "branch": "work",
+  "grant_paths": [
+    "agents/manual-drafts/MEMORY.md",
+    "agents/manual-drafts/history/"
+  ],
+  "intended_change": {
+    "agents/manual-drafts/MEMORY.md": "Preferencia: respuestas breves.\n",
+    "agents/manual-drafts/history/2026-10-12-preference.md": "Fuente: corrección explícita del propietario. Cambio: respuestas breves.\n"
+  },
+  "events": [
+    {
+      "tool": "FICTICIO.repository.write_atomic",
+      "expected_revision": "fixture-partial-base-20",
+      "paths": [
+        "agents/manual-drafts/MEMORY.md",
+        "agents/manual-drafts/history/2026-10-12-preference.md"
+      ],
+      "result": {
+        "error": "timeout",
+        "outcome": "unknown"
+      }
+    },
+    {
+      "tool": "FICTICIO.repository.read",
+      "path": "agents/manual-drafts/MEMORY.md",
+      "result": {
+        "revision": "fixture-partial-result-21",
+        "content": "Preferencia: respuestas breves.\n"
+      }
+    },
+    {
+      "tool": "FICTICIO.repository.read",
+      "path": "agents/manual-drafts/history/2026-10-12-preference.md",
+      "result": {
+        "error": "read_temporarily_unavailable",
+        "content": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scenario": "timeout-readback-parcial",
+  "synthetic": true,
+  "aggregate_save_state": "uncertain",
+  "per_path": {
+    "agents/manual-drafts/MEMORY.md": {
+      "state": "verified-intended-content",
+      "revision": "fixture-partial-result-21"
+    },
+    "agents/manual-drafts/history/2026-10-12-preference.md": {
+      "state": "unverified",
+      "reason": "readback unavailable"
+    }
+  },
+  "claim_saved_github": false,
+  "blind_replay": false,
+  "retry_write_performed": false,
+  "candidate_activated": false,
+  "next_action": "Releer el historial y la revisión actual antes de decidir si falta guardado; conservar el contenido preparado. No repetir todo el lote ni afirmar revisión completa."
+}

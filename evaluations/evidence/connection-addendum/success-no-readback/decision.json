@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scenario": "respuesta-exitosa-sin-readback",
+  "synthetic": true,
+  "aggregate_save_state": "uncertain",
+  "claim_saved_github": false,
+  "blind_replay": false,
+  "evidence_available": "Acuse ficticio de éxito con revisión, sin contenido leído de destino.",
+  "evidence_missing": "Readback de revisión/contenido de MEMORY.md que confirme el cambio deseado.",
+  "next_action": "Obtener readback; mientras tanto informar respuesta de éxito sin persistencia verificada, conservar preparación y no repetir escritura."
+}

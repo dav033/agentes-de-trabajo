@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "tools_are_fictitious": true,
+  "repo": "private-owner/work-memory",
+  "branch": "work",
+  "grant_paths": [
+    "agents/manual-drafts/MEMORY.md"
+  ],
+  "intended_change": {
+    "agents/manual-drafts/MEMORY.md": "Preferencia: respuestas breves.\n"
+  },
+  "events": [
+    {
+      "tool": "FICTICIO.repository.write",
+      "expected_revision": "fixture-success-base-30",
+      "path": "agents/manual-drafts/MEMORY.md",
+      "result": {
+        "status": "success",
+        "revision": "fixture-success-result-31"
+      }
+    },
+    {
+      "tool": "FICTICIO.repository.read",
+      "path": "agents/manual-drafts/MEMORY.md",
+      "result": {
+        "error": "readback_not_available",
+        "content": null
+      }
+    }
+  ]
+}

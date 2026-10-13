@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentes de trabajo"
+  short_description: "Crea, coordina y mejora tus agentes de trabajo"
+  default_prompt: "Usa $agentes-de-trabajo para crear un agente que me ayude con una tarea y recuerde cómo trabajo."
